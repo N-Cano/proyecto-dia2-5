@@ -1,0 +1,70 @@
+/* Import fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif; /* FF de 400 y 700 */
+    background-color: var(--Light-gray);
+    /* CENTRAR CARD */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    /* ------------ */
+    margin: 1.25rem;
+}
+
+/* Estilos */
+.container {
+    background: var(--White);
+    width: 15rem;
+    /* margin: auto; */
+    padding: .8rem;
+    border-radius: .625rem;
+    box-shadow: 5px 5px 5pd rgba(0, 0, 0, 0.3);
+}
+
+.imagen {
+    width: 100%;
+}
+
+.imagen-qr {
+    width: 100%;
+    border-radius: .5rem;
+    vertical-align: top;
+}
+
+.texto-titulo {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--Dark-blue);
+}
+
+.texto-parrafo {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 1rem;
+    padding-bottom: .8rem;
+    color: var(--Grayish-blue);
+}
+
+.attribution {
+    margin-top: 1rem;
+}
